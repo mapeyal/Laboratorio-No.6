@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Definimos el lenguaje de nuestra página-->
+<header>
+    <!--Definimos que acepte todo tipo de caracteres-->
+    <meta charset="utf-8"> >
+    <!--Definimos el nombre que aparece en la pestaña del navegador-->
+    <title>Números aleatorios</title>
+    <!--Hacemos referencia a la hoja de estilos-->
+    <link rel="stylesheet" type="text/css" href="estilos/estilo.css">    
+</header>
+
+<body>
+    <div id="contenedor">
+        <!--Centamos los botones-->
+        <center>
+            <!--Definimos los botones y que al darles click realicen una función-->
+            <button id="generar" onclick="function generar()">Generar numeros</button>
+            <button id="limpiar" onclick="function limpiar()">limpiar</button>
+        </center>
+
+        <h4>Números generados</h4>
+
+        <center>
+            <!--Creamos el canvas 1 con sus respectivas propiedades-->
+            <canvas id="canvas1" width="900" height="150" style="border:1px=" solid="" #c3c3c3>
+            </canvas>
+        </center>
+
+        <h4>Números ordenados de menor a mayor</h4>
+        <center>
+            <!--Creamos el canvas 2 con sus respectivas propiedades-->
+            <canvas id="canvas2" width="900" height="150" style="border:1px=" solid="" #c3c3c3>
+            </canvas>
+        </center>
+        <div>
+            <h4>
+                El numero mayor es: <h4 id="Mayor"></h4> <!--Definimos el id para poder imprimir el resultado de la función en JS-->
+            </h4>
+        </div>
+        <div>
+            <h4>
+                El numero menor es: <h4 id="Menor"></h4> <!--Definimos el id para poder imprimir el resultado de la función en JS-->
+            </h4>
+        </div>
+    </div>
+</body>
+<!---Llamamos al documento JS con las funciones-->
+<script src="js/script.js"></script>
+</html>
